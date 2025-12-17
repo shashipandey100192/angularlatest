@@ -1,1 +1,17 @@
-<p>userlogin works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2" [ngStyle]="{'background-color':mycolor}">
+            <h1 class="bg-danger">heading</h1>
+            <h2 style="color:orange;font-size: 30px;">this is heading</h2>
+            <h2 [ngStyle]="{'font-size':'60px'}">this is dyn css</h2>
+            <h2 [ngStyle]="{'font-size':fs}">this is dyn css</h2>
+                <button (click)="xys()">submit</button>
+
+                <button (click)="xys1($event)">submit</button>
+                male <input type="radio" value="male" name="g" (click)="xys1($event)">
+                female<input type="radio" value="female" name="g" (click)="xys1($event)">
+                other<input type="radio" value="other" name="g" (click)="xys1($event)">
+                background color <input type="color" (input)="xys2($event)">
+        </div>
+    </div>
+</div>
