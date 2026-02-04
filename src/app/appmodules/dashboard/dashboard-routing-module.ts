@@ -2,15 +2,23 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Landing } from './landing/landing';
 import { Mainpage } from './mainpage/mainpage';
+import { Errorpage } from '../../shaprescomponents/errorpage/errorpage';
 
 const routes: Routes = [
   {
     path:"",
-    component:Landing
+    component:Landing,
+    title:"dashboard page"
   },
   {
     path:"main",
-    component:Mainpage
+    component:Mainpage,
+    title:"mainpage"
+  },
+  {
+    path:'**',
+    component:Errorpage,
+    title:"Error"
   }
 ];
 
