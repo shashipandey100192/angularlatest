@@ -1,1 +1,9 @@
 <p>mainpage works!</p>
+<input type="button" value="submit" (click)="mydata()">
+
+<select class="form-select">
+    @for(a of myproduct; track a.id)
+    {
+    <option>{{a.title}}</option>
+    }
+</select>
